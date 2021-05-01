@@ -28,16 +28,16 @@
                     app:boxCornerRadiusBottomStart="@dimen/box_corner_radius"
                     app:boxCornerRadiusTopEnd="@dimen/box_corner_radius"
                     app:boxCornerRadiusTopStart="@dimen/box_corner_radius"
-                    app:boxStrokeColor="@color/stroke_color_outlined"
-                    app:hintTextColor="@color/colorOnPrimary"
+                    app:boxStrokeColor="@color/colorPrimary"
+                    app:hintTextColor="@color/colorPrimary"
                     app:startIconDrawable="@drawable/ic_menu_home"
-                    app:startIconTint="@null">
+                    app:startIconTint="@color/colorPrimary">
 
                     <com.google.android.material.textfield.TextInputEditText
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:textColor="@color/colorOnPrimary"
-                        android:textCursorDrawable="@color/colorOnPrimary" />
+                        android:textColor="@color/colorPrimary"
+                        android:textCursorDrawable="@color/colorPrimary" />
 
                 </com.google.android.material.textfield.TextInputLayout>
 
@@ -52,17 +52,17 @@
                     app:boxCornerRadiusBottomStart="@dimen/box_corner_radius"
                     app:boxCornerRadiusTopEnd="@dimen/box_corner_radius"
                     app:boxCornerRadiusTopStart="@dimen/box_corner_radius"
-                    app:boxStrokeColor="@color/stroke_color_outlined"
-                    app:hintTextColor="@color/colorOnPrimary"
+                    app:boxStrokeColor="@color/colorPrimary"
+                    app:hintTextColor="@color/colorPrimary"
                     app:startIconDrawable="@drawable/ic_menu_sos"
-                    app:startIconTint="@null">
+                    app:startIconTint="@color/colorPrimary">
 
                     <com.google.android.material.textfield.TextInputEditText
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:inputType="number"
-                        android:textColor="@color/colorOnPrimary"
-                        android:textCursorDrawable="@color/colorOnPrimary" />
+                        android:textColor="@color/colorPrimary"
+                        android:textCursorDrawable="@color/colorPrimary" />
 
                 </com.google.android.material.textfield.TextInputLayout>
 

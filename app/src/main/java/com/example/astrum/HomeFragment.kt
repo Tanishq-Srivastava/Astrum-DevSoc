@@ -20,9 +20,9 @@ class HomeFragment : Fragment() {
         val view = inflater.inflate(R.layout.fragment_home, container, false)
         val b2 = view.findViewById<View>(R.id.mapButton) as Button
         b2.setOnClickListener {
-            Toast.makeText(context, "Loading monitoring system", Toast.LENGTH_SHORT).show()
-            val intent = Intent(context, MapFragment::class.java)
-            startActivity(intent)
+        Toast.makeText(context, "Loading monitoring system", Toast.LENGTH_SHORT).show()
+        val intent = Intent(context, MapFragment::class.java)
+        startActivity(intent)
         }
         return view
     }

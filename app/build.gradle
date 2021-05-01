@@ -22,6 +22,8 @@ android {
         versionCode 1
         versionName "1.0"
 
+        vectorDrawables.useSupportLibrary = true
+
         multiDexEnabled true
 
         //variable for def function to use in manifest file
