@@ -20,6 +20,12 @@ We plan to develop an IoT device along with an Android app that can make women's
 
 The IoT device will capacitate her with self-defense mechanisms - a taser that requires a small battery input of around 4-6 V, to produce voltage levels of up to 400,000 V. Adequate insulation is provided to ensure the user's well-being, while thoroughly immobilizing the attacker for some time.
 
+### APP
+
+
+### HARDWARE
+
+
 ### HARDWARE DESIGN:
 <img src="https://user-images.githubusercontent.com/43111126/116794597-cab79f00-aaeb-11eb-96da-9e5ec095332a.png" width="250" height="200">
 We plan to make an expandable baton that has a taser at its tip. It is small and light to carry. It can be hooked to one's belt, handbag, etc. it can be used in case of emergency without the need of unhooking it. 
