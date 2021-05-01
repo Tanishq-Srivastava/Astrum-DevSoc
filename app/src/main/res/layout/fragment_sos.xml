@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".SOSFragment">
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:paddingStart="@dimen/padding_form"
+            android:paddingEnd="@dimen/padding_form">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:orientation="vertical">
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:id="@+id/name"
+                    style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="@string/name"
+                    app:boxCornerRadiusBottomEnd="@dimen/box_corner_radius"
+                    app:boxCornerRadiusBottomStart="@dimen/box_corner_radius"
+                    app:boxCornerRadiusTopEnd="@dimen/box_corner_radius"
+                    app:boxCornerRadiusTopStart="@dimen/box_corner_radius"
+                    app:boxStrokeColor="@color/stroke_color_outlined"
+                    app:hintTextColor="@color/colorOnPrimary"
+                    app:startIconDrawable="@drawable/ic_menu_home"
+                    app:startIconTint="@null">
+
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/colorOnPrimary"
+                        android:textCursorDrawable="@color/colorOnPrimary" />
+
+                </com.google.android.material.textfield.TextInputLayout>
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:id="@+id/number"
+                    style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="20dp"
+                    android:hint="@string/contact_number"
+                    app:boxCornerRadiusBottomEnd="@dimen/box_corner_radius"
+                    app:boxCornerRadiusBottomStart="@dimen/box_corner_radius"
+                    app:boxCornerRadiusTopEnd="@dimen/box_corner_radius"
+                    app:boxCornerRadiusTopStart="@dimen/box_corner_radius"
+                    app:boxStrokeColor="@color/stroke_color_outlined"
+                    app:hintTextColor="@color/colorOnPrimary"
+                    app:startIconDrawable="@drawable/ic_menu_sos"
+                    app:startIconTint="@null">
+
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:inputType="number"
+                        android:textColor="@color/colorOnPrimary"
+                        android:textCursorDrawable="@color/colorOnPrimary" />
+
+                </com.google.android.material.textfield.TextInputLayout>
+
+                <androidx.appcompat.widget.AppCompatButton
+                    android:id="@+id/addno"
+                    android:layout_width="match_parent"
+                    android:layout_height="45dp"
+                    android:layout_marginTop="30dp"
+                    android:background="@drawable/button_bg"
+                    android:elevation="60dp"
+                    android:focusableInTouchMode="true"
+                    android:text="@string/add_emergency_number"
+                    android:textColor="#FFFFFF" />
+
+            </LinearLayout>
+
+        </ScrollView>
+
+    </FrameLayout>
