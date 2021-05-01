@@ -5,6 +5,9 @@ Time has helplessly watched women suffer in the form of discrimination, oppressi
 
 There have been unavoidable situations wherein they have to travel late at night through isolated streets for work. The mobile apps to send emergency alarms and pepper sprays for self-defense are but to no avail since the fundamental issue still haunts her right there - The need for a well-devised ESCAPE PLAN in the golden hour before she gets the much-needed help.
 
+![image](https://user-images.githubusercontent.com/43111126/116794658-41549c80-aaec-11eb-9a6d-c5beb04165af.png)
+
+
 ### NOVELTY:
 Our aim is to strike at the very root, and capacitate women with a full-proof escape plan to a much safer place and buy them time until the help reaches them. This is over and above the current devices which are only capable of sending SOS messages.
 
@@ -21,6 +24,7 @@ The IoT device will capacitate her with self-defense mechanisms - a taser that r
 
 ### HARDWARE DESIGN:
 We plan to make an expandable baton that has a taser at its tip. It is small and light to carry. It can be hooked to one's belt, handbag, etc. it can be used in case of emergency without the need of unhooking it.
+
 ![image](https://user-images.githubusercontent.com/43111126/116794597-cab79f00-aaeb-11eb-96da-9e5ec095332a.png)
 
 
