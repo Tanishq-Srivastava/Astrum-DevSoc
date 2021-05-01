@@ -26,8 +26,11 @@ The IoT device will capacitate her with self-defense mechanisms - a taser that r
 ### HARDWARE
 ![image](https://user-images.githubusercontent.com/43111126/116795104-25eb9080-aaf0-11eb-896d-a6ed4bc731ec.png)
 
+### PCB DESIGN
+
+
 ### HARDWARE DESIGN:
-<img src="https://user-images.githubusercontent.com/43111126/116794597-cab79f00-aaeb-11eb-96da-9e5ec095332a.png" width="250" height="200">
+![image](https://user-images.githubusercontent.com/43111126/116795257-54b63680-aaf1-11eb-9600-d094f865f109.png)
 We plan to make an expandable baton that has a taser at its tip. It is small and light to carry. It can be hooked to one's belt, handbag, etc. it can be used in case of emergency without the need of unhooking it. 
 
 
