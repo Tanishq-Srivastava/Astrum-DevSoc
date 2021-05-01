@@ -6,32 +6,14 @@
     android:layout_height="match_parent"
     tools:context=".HomeFragment">
 
-    <RelativeLayout
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_gravity="center">
-
         <Button
             android:id="@+id/mapButton"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_gravity="center_horizontal"
+            android:layout_gravity="center"
             android:clickable="true"
             android:text="View Monitoring System"
             android:textColor="@android:color/white"
             android:textSize="15sp" />
-
-        <Button
-            android:id="@+id/btn_speak"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_gravity="center_horizontal"
-            android:layout_marginTop="80dp"
-            android:clickable="true"
-            android:text="Voice Enabled SOS"
-            android:textColor="@android:color/white"
-            android:textSize="15sp" />
-
-    </RelativeLayout>
 
 </FrameLayout>

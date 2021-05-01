@@ -6,7 +6,11 @@ import android.content.Intent
 import android.content.pm.PackageManager
 import android.net.Uri
 import android.os.Bundle
+import android.speech.RecognitionListener
+import android.speech.RecognizerIntent
+import android.speech.SpeechRecognizer
 import android.telephony.SmsManager
+import android.text.TextUtils
 import android.util.Log
 import android.view.Menu
 import android.view.MenuItem
@@ -30,7 +34,7 @@ import com.google.firebase.database.*
 import java.util.*
 
 
-class MainActivity : AppCompatActivity() {
+class MainActivity : AppCompatActivity(), RecognitionListener {
 
     private lateinit var appBarConfiguration: AppBarConfiguration
 
@@ -48,15 +52,34 @@ class MainActivity : AppCompatActivity() {
     // Database Reference for Firebase.
     lateinit var databaseReference: DatabaseReference
 
+    //voice-input
+    lateinit var speech: SpeechRecognizer
+
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
 
         ActivityCompat.requestPermissions(
             this@MainActivity,
-            arrayOf(Manifest.permission.SEND_SMS, Manifest.permission.READ_SMS,Manifest.permission.RECORD_AUDIO),
+            arrayOf(
+                Manifest.permission.SEND_SMS,
+                Manifest.permission.READ_SMS,
+                Manifest.permission.RECORD_AUDIO
+            ),
             PackageManager.PERMISSION_GRANTED
         )
+
+        //voice-input
+        speech = SpeechRecognizer.createSpeechRecognizer(this)
+        speech.setRecognitionListener(this as RecognitionListener)
+        val intent = Intent(RecognizerIntent.ACTION_RECOGNIZE_SPEECH)
+        intent.putExtra(RecognizerIntent.EXTRA_LANGUAGE_PREFERENCE, "en")
+        intent.putExtra(
+            RecognizerIntent.EXTRA_CALLING_PACKAGE,
+            this.packageName
+        )
+        speech.startListening(intent)
+
 
         auth = FirebaseAuth.getInstance()
         val toolbar: Toolbar = findViewById(R.id.toolbar)
@@ -130,13 +153,20 @@ class MainActivity : AppCompatActivity() {
             null,
             null
         )
+        smsManager.sendTextMessage(
+            "9140892328",
+            null,
+            "I am in danger! Reach out at the coordinates Latitude: 15.47914, Longitude: 73.8209788",
+            null,
+            null
+        )
         Toast.makeText(this, "SOS Sent Successfully!", Toast.LENGTH_SHORT).show()
     }
 
     //Google Maps turn by turn navigation
     fun escape()
     {
-       val googleMapsUrl = "google.navigation:q=15.49010396751634, 73.82004252609961&mode=w"
+        val googleMapsUrl = "google.navigation:q=15.49010396751634, 73.82004252609961&mode=w"
         val uri = Uri.parse(googleMapsUrl)
 
         val googleMapsPackage = "com.google.android.apps.maps"
@@ -248,4 +278,35 @@ class MainActivity : AppCompatActivity() {
             Log.e("Login", "Unknown sign in response")
         }
     }
+
+    override fun onBeginningOfSpeech() {}
+
+    override fun onBufferReceived(arg0: ByteArray?) {}
+
+    override fun onEndOfSpeech() {}
+
+    override fun onError(e: Int) {}
+
+    override fun onEvent(arg0: Int, arg1: Bundle?) {}
+
+    override fun onPartialResults(arg0: Bundle?) {}
+
+    override fun onReadyForSpeech(arg0: Bundle?) {}
+
+    override fun onResults(data: Bundle) {
+        val matches = data.getStringArrayList(SpeechRecognizer.RESULTS_RECOGNITION)
+        val joined = TextUtils.join(", ", matches!!)
+        Log.i("Voice Input", joined)
+
+        // Do something useful with the matches =)
+        // ...
+        if (matches.contains("help")) {
+            //Successful voice input
+            Toast.makeText(this, "Successful Voice Input", Toast.LENGTH_SHORT).show()
+            sendMessage()
+            escape()
+        }
+    }
+
+    override fun onRmsChanged(arg0: Float) {}
 }

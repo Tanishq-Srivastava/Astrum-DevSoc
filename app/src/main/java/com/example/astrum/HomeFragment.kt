@@ -24,11 +24,6 @@ class HomeFragment : Fragment() {
         val intent = Intent(context, MapFragment::class.java)
         startActivity(intent)
         }
-        val spkbtn= view.findViewById<View>(R.id.btn_speak) as Button
-        spkbtn.setOnClickListener {
-            val intent = Intent(context, VoiceActivity::class.java)
-            startActivity(intent)
-        }
         return view
     }
 }
