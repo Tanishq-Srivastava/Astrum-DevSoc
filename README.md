@@ -41,3 +41,6 @@ We plan to make an expandable baton that has a taser at its tip. It is small and
 ### IMPACT - User adoption metrics:
 Through this comprehensive Escape plan device with inbuilt self-defense techniques, we expect to make the women in distress self-sufficient to tackle the issue head-on and not wait for aid helplessly. We believe such devices when adopted by the users would give them a sense of safety and would greatly contribute to getting her out of abusive circumstances
 
+### DEMO VIDEO:
+https://drive.google.com/file/d/14G9j-A8R91klami5jBnNhXxm76LVKd5S/view?usp=sharing
+
