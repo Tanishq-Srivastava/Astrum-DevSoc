@@ -13,6 +13,7 @@ We also plan to make use of self-defense mechanisms like taser as additional sec
 
 ### TECH-STACK:
 Software: Android Studio, Kotlin, Firebase, Google Maps SDK
+
 Hardware: Fiberglass baton, Boost converter 3.6-6V to 400kV
 
 ### IMPLEMENTATION:
