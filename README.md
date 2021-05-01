@@ -27,7 +27,7 @@ The IoT device will capacitate her with self-defense mechanisms - a taser that r
 ![image](https://user-images.githubusercontent.com/43111126/116795104-25eb9080-aaf0-11eb-896d-a6ed4bc731ec.png)
 
 ### PCB DESIGN
-
+![image](https://user-images.githubusercontent.com/43111126/116795307-a19a0d00-aaf1-11eb-9349-0565c353ae66.png)
 
 ### HARDWARE DESIGN:
 ![image](https://user-images.githubusercontent.com/43111126/116795257-54b63680-aaf1-11eb-9600-d094f865f109.png)
