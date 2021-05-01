@@ -21,10 +21,10 @@ We plan to develop an IoT device along with an Android app that can make women's
 The IoT device will capacitate her with self-defense mechanisms - a taser that requires a small battery input of around 4-6 V, to produce voltage levels of up to 400,000 V. Adequate insulation is provided to ensure the user's well-being, while thoroughly immobilizing the attacker for some time.
 
 ### APP
-![image](https://user-images.githubusercontent.com/43111126/116795057-cf7e5200-aaef-11eb-9196-30b097058234.png)
+![image](https://user-images.githubusercontent.com/43111126/116795092-09e7ef00-aaf0-11eb-8fcc-4d882b42cce0.png)
 
 ### HARDWARE
-
+![image](https://user-images.githubusercontent.com/43111126/116795104-25eb9080-aaf0-11eb-896d-a6ed4bc731ec.png)
 
 ### HARDWARE DESIGN:
 <img src="https://user-images.githubusercontent.com/43111126/116794597-cab79f00-aaeb-11eb-96da-9e5ec095332a.png" width="250" height="200">
