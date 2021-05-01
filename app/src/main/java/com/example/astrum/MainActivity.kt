@@ -2,7 +2,6 @@ package com.example.astrum
 
 import android.Manifest
 import android.app.Activity
-import android.content.Context
 import android.content.Intent
 import android.content.pm.PackageManager
 import android.net.Uri
@@ -28,6 +27,7 @@ import com.google.android.material.floatingactionbutton.FloatingActionButton
 import com.google.android.material.navigation.NavigationView
 import com.google.firebase.auth.FirebaseAuth
 import com.google.firebase.database.*
+import java.util.*
 
 
 class MainActivity : AppCompatActivity() {
@@ -54,7 +54,7 @@ class MainActivity : AppCompatActivity() {
 
         ActivityCompat.requestPermissions(
             this@MainActivity,
-            arrayOf(Manifest.permission.SEND_SMS, Manifest.permission.READ_SMS),
+            arrayOf(Manifest.permission.SEND_SMS, Manifest.permission.READ_SMS,Manifest.permission.RECORD_AUDIO),
             PackageManager.PERMISSION_GRANTED
         )
 
@@ -123,14 +123,20 @@ class MainActivity : AppCompatActivity() {
     //sending SMS using SMSManager API
     fun sendMessage() {
         var smsManager: SmsManager = SmsManager.getDefault()
-        smsManager.sendTextMessage("8956459506", null, "I am in danger! Reach out at the coordinates Latitude: 15.47914, Longitude: 73.8209788", null, null)
+        smsManager.sendTextMessage(
+            "8956459506",
+            null,
+            "I am in danger! Reach out at the coordinates Latitude: 15.47914, Longitude: 73.8209788",
+            null,
+            null
+        )
         Toast.makeText(this, "SOS Sent Successfully!", Toast.LENGTH_SHORT).show()
     }
 
     //Google Maps turn by turn navigation
     fun escape()
     {
-       val googleMapsUrl = "google.navigation:q=15.490212528331876,73.82007471254082&mode=w"
+       val googleMapsUrl = "google.navigation:q=15.49010396751634, 73.82004252609961&mode=w"
         val uri = Uri.parse(googleMapsUrl)
 
         val googleMapsPackage = "com.google.android.apps.maps"
@@ -151,7 +157,7 @@ class MainActivity : AppCompatActivity() {
                 // below line is for getting the data from
                 // snapshot of our database.
                 val value = snapshot.getValue(String::class.java)
-                if(value.equals("begin")) {
+                if (value.equals("begin")) {
 
                     // after getting the value we are setting
                     // our value to our text view in below line.
