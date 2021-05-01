@@ -22,8 +22,9 @@ The IoT device will capacitate her with self-defense mechanisms - a taser that r
 ### HARDWARE DESIGN:
 We plan to make an expandable baton that has a taser at its tip. It is small and light to carry. It can be hooked to one's belt, handbag, etc. it can be used in case of emergency without the need of unhooking it.
 
+
 ### BLOCK DIAGRAM
-https://drive.google.com/file/d/17In-RGQiGL3wu8AXNuSWo4JQ6ZXvY2a7/view?usp=sharing
+![image](https://user-images.githubusercontent.com/43111126/116794549-5a108280-aaeb-11eb-9169-4ed2d3e86e46.png)
 
 ### IMPACT - User adoption metrics:
 Through this comprehensive Escape plan device with inbuilt self-defense techniques, we expect to make the women in distress self-sufficient to tackle the issue head-on and not wait for aid helplessly. We believe such devices when adopted by the users would give them a sense of safety and would greatly contribute to getting her out of abusive circumstances
