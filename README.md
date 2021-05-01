@@ -4,7 +4,7 @@
 Time has helplessly watched women suffer in the form of discrimination, oppression, exploitation, degradation, aggression, humiliation. Welcome to the 21st century where the reality is not too different; women are attacked and assaulted, and no more feel safe to freely roam around the city at regular hours too.
 
 There have been unavoidable situations wherein they have to travel late at night through isolated streets for work. The mobile apps to send emergency alarms and pepper sprays for self-defense are but to no avail since the fundamental issue still haunts her right there - The need for a well-devised ESCAPE PLAN in the golden hour before she gets the much-needed help.
-<img src="https://user-images.githubusercontent.com/43111126/116794658-41549c80-aaec-11eb-9a6d-c5beb04165af.png" width="250" height="300">
+
 
 ### NOVELTY:
 Our aim is to strike at the very root, and capacitate women with a full-proof escape plan to a much safer place and buy them time until the help reaches them. This is over and above the current devices which are only capable of sending SOS messages.
